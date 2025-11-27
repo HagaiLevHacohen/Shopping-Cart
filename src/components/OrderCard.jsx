@@ -51,7 +51,7 @@ OrderCard.propTypes = {
   price: PropTypes.number.isRequired, // must be a number
   amount: PropTypes.number.isRequired,
   SetAmount: PropTypes.func.isRequired,
-  handleAddToCart: PropTypes.func.isRequired, // optional number
+  handleRemove: PropTypes.func.isRequired, // optional number
 };
 
 export default OrderCard;
