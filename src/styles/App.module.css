@@ -1,27 +1,25 @@
 .header {
-    display: flex;
-    justify-content: space-between;
-    height: 80px;
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
 
+  background-color: var(--color-bg-secondary);
+  color: white;
+  padding: 20px 100px;
 
-    background-color: var(--color-bg-secondary);
-    color: white;
-    padding: 20px 100px;
-
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .title {
-    font-size: 36px;
+  font-size: 36px;
 }
 
 .nav {
-    display: flex;
-    gap: 40px;
-    align-items: center;
+  display: flex;
+  gap: 40px;
+  align-items: center;
 }
 
 .link {
@@ -34,54 +32,53 @@
 
 .link:hover,
 .link:active {
-  text-decoration: none;       /* ensures no underline on hover */
+  text-decoration: none; /* ensures no underline on hover */
   transform: scale(1.2);
   text-shadow: 0 0 4px var(--color-accent);
 }
 
 .cartLink {
-    display: flex;
-    gap: 10px;
+  display: flex;
+  gap: 10px;
 }
 
 .cartCounter {
-    text-align: center;
-    background-color: black;
-    height: 20px;
-    width: 30px;
-    border-radius: 10px;
+  text-align: center;
+  background-color: black;
+  height: 20px;
+  width: 30px;
+  border-radius: 10px;
 }
 
 .invisible {
-    visibility: hidden;
+  visibility: hidden;
 }
 
 .main {
-    flex: 1;
-    padding: 0 100px;
+  flex: 1;
+  padding: 0 100px;
 }
 
-@media  (min-width: 600px) and (max-width: 1200px) {
-    .header { 
-        padding: 20px 10px;
-    }
+@media (min-width: 600px) and (max-width: 1200px) {
+  .header {
+    padding: 20px 10px;
+  }
 
   .main {
     padding: 0 10px;
   }
 }
 
-
 @media (max-width: 600px) {
-    .title {
+  .title {
     font-size: 28px;
-    }
-    .header { 
-        padding: 20px 10px;
-    }
-    .nav {
-        gap: 7px;
-    }
+  }
+  .header {
+    padding: 20px 10px;
+  }
+  .nav {
+    gap: 7px;
+  }
 
   .main {
     padding: 0 10px;

@@ -1,18 +1,16 @@
-
 .card {
-    width: 100%;
-    height: 450px;
-    background-color: oklch(0.928 0.006 264.531);
-    padding: 10px;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 2px 2px 4px grey;
+  width: 100%;
+  height: 450px;
+  background-color: oklch(0.928 0.006 264.531);
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 2px 2px 4px grey;
 
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
 }
 
 .animate {
@@ -33,59 +31,59 @@
 }
 
 .card:hover {
-    transform: translateY(-10px);
+  transform: translateY(-10px);
 }
 
 .card > img {
-    width: 90%;    /* exact width you want */
-    height: 200px;   /* exact height you want */
-    object-fit: contain; /* scales image to fit inside without cropping */
-    border-radius: 10px; /* optional, if you want matching corners */
+  width: 90%; /* exact width you want */
+  height: 200px; /* exact height you want */
+  object-fit: contain; /* scales image to fit inside without cropping */
+  border-radius: 10px; /* optional, if you want matching corners */
 }
 
 .card > p {
-    font-size: 18px;
-    font-weight: bold;
-    margin-top: auto;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: auto;
 }
 .inputContainer {
-    display: flex;
-    gap: 10px;
+  display: flex;
+  gap: 10px;
 }
 
 .inputContainer > button {
-    width: 30px;
-    height: 30px;
-    border: none;
-    border-radius: 5px;
-    font-size: 20px;
-    background-color: rgb(47, 142, 252);
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  background-color: rgb(47, 142, 252);
 }
 
 .inputContainer > button:active {
-    transform: scale(0.95);
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transform: scale(0.95);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .inputContainer > input {
-    padding-left: 15px;
-    width: 150px;
-    text-align: center;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    background-color: rgb(47, 142, 252);
+  padding-left: 15px;
+  width: 150px;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: rgb(47, 142, 252);
 }
 
 .btnAddToCart {
-    height: 40px;
-    width: 120px;
-    border: none;
-    border-radius: 5px;
-    background-color: rgb(102, 148, 121);
+  height: 40px;
+  width: 120px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(102, 148, 121);
 }
 
 .btnAddToCart:active {
-    transform: scale(0.95);
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transform: scale(0.95);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }

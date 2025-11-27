@@ -1,23 +1,23 @@
 :root {
-    /* Backgrounds */
-    --color-bg: #f5f7fa;          /* Main background */
-    --color-bg-secondary: #155dfb;
+  /* Backgrounds */
+  --color-bg: #f5f7fa; /* Main background */
+  --color-bg-secondary: #155dfb;
 
-    /* Text */
-    --color-text: #2d2d2d;    
-    /* Secondary text (subtle, lighter gray) */
-    --color-text-secondary: #6b7280;   
+  /* Text */
+  --color-text: #2d2d2d;
+  /* Secondary text (subtle, lighter gray) */
+  --color-text-secondary: #6b7280;
 
-    /* Main Brand Colors */
-    --color-primary: #3b82f6;    
-    --color-secondary: #e2e8f0;  
+  /* Main Brand Colors */
+  --color-primary: #3b82f6;
+  --color-secondary: #e2e8f0;
 
-    /* Highlights / Accents */
-    --color-accent: #10b981;     
+  /* Highlights / Accents */
+  --color-accent: #10b981;
 
-    /* Status Colors */
-    --color-success: #16a34a;    
-    --color-fail: #dc2626;       
+  /* Status Colors */
+  --color-success: #16a34a;
+  --color-fail: #dc2626;
 }
 
 * {
@@ -40,7 +40,6 @@ body {
   width: 100%;
   min-height: 100vh;
   background: var(--color-bg);
-
 
   display: flex;
   flex-direction: column;
