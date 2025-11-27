@@ -1,0 +1,79 @@
+.card {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.card:not(:first-child) {
+  padding-top: 20px;
+  border-top: solid 1px black;
+}
+
+.card > img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.flexContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.card  h3 {
+    font-size: 22px;
+}
+
+.priceOne {
+    color: var(--color-success);
+    font-weight: bold;
+}
+
+.removeBtn {
+    border: none;
+    color: var(--color-fail);
+    cursor: pointer;
+    font-size: 18px;
+    background-color: inherit;
+}
+
+.inputContainer {
+    display: flex;
+    gap: 5px;
+}
+
+.inputContainer button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: rgb(47, 142, 252);
+}
+
+.inputContainer > input {
+    padding-left: 15px;
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: rgb(47, 142, 252);
+}
+
+.inputContainer > button:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+@media (max-width: 600px) {
+    .card {
+        flex-direction: column;
+        align-items: center;
+    }
+}

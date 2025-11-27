@@ -17,7 +17,7 @@ const useItems = () => {
         }
         return response.json();
       })
-      .then((response) => console.log(response))
+      .then((response) => setItemsList(response))
       .catch((error) => setError(error))
       .finally(() => setLoading(false));
   }, []);
@@ -27,8 +27,11 @@ const useItems = () => {
 
 
 function App() {
-  const [itemsCounter, setItemsCounter] = useState(0);
   const { itemsList, error, loading } = useItems();
+  const [cartItems, setCartItems] = useState({}); // Stores a mapping from Id to the amount
+
+  const itemsCounter = Object.values(cartItems).reduce((sum, qty) => sum + qty, 0);
+
 
   return (
     <>
@@ -39,7 +42,7 @@ function App() {
           <Link to='Shop' className={styles.link}>Shop</Link>
           <Link to='Cart' className={`${styles.link} ${styles.cartLink}`}>
             Cart
-            <div className={`${styles.cartCounter} ${itemsCounter === 0 ? styles.invisible : ""}`}>{itemsCounter}</div>
+            <div id="basket-icon" className={`${styles.cartCounter} ${itemsCounter === 0 ? styles.invisible : ""}`}>{itemsCounter}</div>
           </Link>
         </nav>
       </header>
@@ -49,7 +52,7 @@ function App() {
         ) : error ? (
           <p>A network error was encountered</p>
         ) : (
-          <Outlet />
+          <Outlet context={[itemsList, cartItems, setCartItems]}/>
         )}
       </main>
     </>
