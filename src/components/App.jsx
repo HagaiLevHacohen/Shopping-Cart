@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import styles from "../styles/App.module.css";
 import { Outlet, Link } from "react-router";
+import Spinner from "./Spinner";
 
 const useItems = () => {
   const [itemsList, setItemsList] = useState(null);
@@ -57,7 +58,9 @@ function App() {
       </header>
       <main className={styles.main}>
         {loading ? (
-          <p>Loading...</p>
+          <div className={styles.spinnerContainer}>
+            <Spinner />
+          </div>
         ) : error ? (
           <p>A network error was encountered</p>
         ) : (
