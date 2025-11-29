@@ -4,7 +4,7 @@ import styles from "../styles/OrderCard.module.css";
 function OrderCard({ title, image, price, amount, SetAmount, handleRemove }) {
   return (
     <div className={styles.card}>
-      <img src={image} alt="" />
+      <img src={image} alt={title} />
       <div className={styles.flexContainer}>
         <h3>{title}</h3>
         <p className={styles.priceOne}>${price}</p>

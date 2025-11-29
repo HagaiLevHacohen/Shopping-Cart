@@ -40,7 +40,7 @@ function Card({ title, image, price, handleAddToCart }) {
       onAnimationEnd={() => setAnimateCard(false)}
     >
       <h3 className={styles.title}>{title}</h3>
-      <img src={image} alt="" />
+      <img src={image} alt={title} />
       <p>${price}</p>
       <div className={styles.inputContainer}>
         <button
